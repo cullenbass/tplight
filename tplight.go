@@ -9,6 +9,7 @@ import (
 
 type Bulb interface {
 	SetHSB(hue int, saturation int, brightness int)
+	SetHSBT(hue int, saturation int, brightness int, transition_period int)
 	On()
 	Off()
 	Info() *map[string]int
